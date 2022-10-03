@@ -14,7 +14,6 @@ class Hangman:
 
         self.possible_words: List[str]=["becode", "learning", "mathematics", "sessions"]
         self.word_to_find: List[str]=Convert(self.possible_words[possible_word_list])
-        self.possible_words=len(self.word_to_find)
         self.well_guessed_letters: List[str]=["_"]*(len(self.word_to_find))
         self.bad_guessed_letters: List[str]=[]
         self.turn_count: int=0
