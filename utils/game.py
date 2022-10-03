@@ -35,7 +35,7 @@ class Hangman:
                     for i in indexes:
                         self.well_guessed_letters[i]=guess
                     print("good guess")
-                else guess not in self.word_to_find:
+                elif guess not in self.word_to_find:
                     self.bad_guessed_letters.append(guess)
                     self.error_count+=1
                     self.lives-=1
